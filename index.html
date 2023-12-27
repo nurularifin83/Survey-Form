@@ -4,11 +4,13 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Arifin's Survey Form</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="src/css/styles.css">
     </head>
     <body>
-       <h1 id="title">Arifin's Survey Form</h1>
-       <p id="description">Thank you for taking the time to help us improve the platform</p>
+       <div class="row header">
+        <h1 id="title">Arifin's Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+       </div>
        <form id="survey-form">
         <div class="form-group">
             <label id="name-label">Name:</label>
@@ -23,9 +25,9 @@
             <input type="number" name="age" id="number" min="" max="" placeholder="Age" required>
         </div>
         <div class="form-group">
-            <label for="">Which option best describes your current role?</label>
+            <label for="" id="role-label">Which option best describes your current role?</label>
             <select name="role" id="dropdown">
-                <option value="">Select current role</option>
+                <option value="selectrole">Select current role</option>
                 <option value="">Student</option>
                 <option value="">Full Time Job</option>
                 <option value="">Full Time Learner</option>
@@ -34,24 +36,28 @@
             </select>
         </div>
         <div class="form-group">
-            <label>Would you recommend freeCodeCamp to a friend?</label>
+            <label id="recommend-label">Would you recommend freeCodeCamp to a friend?</label>
             <label for=""><input type="radio" value="" name="recommend" id="" checked>Definitely</label>
             <label for=""><input type="radio" value="" name="recommend" id="">Maybe</label>
             <label for=""><input type="radio" value="" name="recommend" id="">Not Sure</label>
         </div>
         <div class="form-group">
-            <label for="">What would you like to see improved? (Check all that apply)</label>
+            <label for="" id="improved-label">What would you like to see improved? (Check all that apply)</label>
             <label for=""><input type="checkbox" value="" name="" id="">Front-end Projects</label>
             <label for=""><input type="checkbox" value="" name="" id="">Back-end Projects</label>
             <label for=""><input type="checkbox" value="" name="" id="">Videos</label>
         </div>
         <div class="form-group">
-            <label for="">Any comments or suggestions?</label>
+            <label for="" id="comment-label">Any comments or suggestions?</label>
             <textarea name="comments" id="" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
         </div>
         <div class="form-group">
             <button type="button" name="" id="submit">Submit</button>
         </div>
        </form> 
+       <!-- Footer Part -->
+        <footer class="main-footer">
+            <span>Made with </span><span style="color: red;">&hearts;</span>. Coded By <a href="https://github.com/nurularifin83" target="_blank">N. Arifin</a>
+        </footer>
     </body>
 </html>
